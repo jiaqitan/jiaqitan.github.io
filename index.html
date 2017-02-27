@@ -1,1 +1,419 @@
-Hello World 2
+<html>
+<head>
+<title>Jiaqi Tan</title>
+<link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+<div class="outerbox">
+<h1>Jiaqi Tan</h1>
+  
+<div class="contentbox">
+<h2>About Me</h2>
+  <p>
+  <img src="self_feb2012.JPG" align="right" style="margin-left: 15px; border: 1px solid #000000" width=75 height=75 />
+  I am a research engineer in the Information Division at <a href="http://www.dso.org.sg/" target="_blank">DSO National Laboratories</a>
+  in Singapore. My research interests
+  are in Computer Security and Program Verification, particularly in ensuring that software is free of
+  security faults using formal techniques such as Interactive Theorem Proving. 
+  </p>
+
+  <p>
+  Previously, I completed my Ph.D. in 
+  <a href="http://www.ece.cmu.edu/" target="_blank">Electrical and Computer Engineering</a>
+  at <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>, under the supervision of
+  <a href="http://www.cs.cmu.edu/~priya" target="_blank">Prof. Priya Narasimhan</a>, where I was
+  also affiliated with the
+  <a href="http://www.pdl.cmu.edu/" target="_blank">Parallel Data Laboratory</a>. (My previous webpage can be found <a href="http://users.ece.cmu.edu/~jiaqit/" target="_blank">here</a>.)
+  My Ph.D. thesis was "<a href="http://repository.cmu.edu/dissertations/715" target="_blank">Prescriptive Safety-Checks through Automated Proofs for Control-Flow Integrity</a>".
+  Prior to that, I completed my Bachelor's and Master's in Computer Science at the
+  <a href="http://www.cs.cmu.edu/" target="_blank">School of Computer Science</a> at
+  <a href="http://www.cmu.edu/" target="_blank">Carnegie Mellon University</a> in 2008
+  and 2009 respectively.
+  My Bachelor's Honor's Thesis was "RAMS and BlackSheep: Inferring white-box application behavior using black-box techniques"</a>
+  (<a href="http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-08-103_abs.shtml" target="_blank">CMU-PDL-08-103</a>), while my
+  Master's Thesis was "Log-based Approaches to Characterizing and Diagnosing MapReduce Systems"
+  (<a href="http://reports-archive.adm.cs.cmu.edu/anon/2009/abstracts/09-143.html" target="_blank">CMU-CS-09-143</a>).
+  </p>
+
+  <p>More details about my work can be found at <a href="https://scholar.google.com/citations?user=GwEdlMkAAAAJ&hl=en" target="_blank">my Google Scholar page</a>.
+  </p>
+</div>
+
+<h1>Thesis Research</h1>
+
+<div class="contentbox">
+  <h2>Prescriptive Safety-Checks through Automated Proofs for Control-Flow Integrity</h2>
+  <p>(<a href="http://repository.cmu.edu/dissertations/715" target="_blank">Thesis Document</a>)</p>
+  <p>
+    Embedded software today is pervasive: they can be found everywhere, from coffee makers and medical devices, to cars and aircraft. Embedded software today is also open and connected to the Internet, exposing them to external attacks that can cause its Control-Flow Integrity (CFI) to be violated. Control-Flow Integrity is an important safety property of software, which ensures that the behavior of the software is not inadvertently changed. The violation of CFI in software can cause unintended behaviors, and can even lead to catastrophic incidents in safety-critical systems.
+  </p>
+  <p>
+    This dissertation develops a two-part approach for CFI: (i) prescribing source-code safetychecks, that prevent the root-causes of CFI, that programmers can insert themselves, and (ii) formally proving CFI for the machine-code of programs with source-code safety-checks. First, our prescribed safety-checks, when applied, prevent the root-causes of CFI, thereby enabling software to recover from CFI violations in a customizable way. In addition, our prescribed safety-checks are visible to programmers, empowering them to ensure that the behavior of their software is not inadvertently changed by the prescribed safety-checks. However, programmer-inserted safety-checks may be incomplete. Thus, current techniques for proving CFI, which assume that safety-checks are complete, may not work. Second, this dissertation develops a logic approach that automates formal proofs of CFI for the machine-code of software containing both source-code CFI safety-checks and system calls. We extend an existing trustworthy Hoare logic with new proof rules, proof tactics, and a novel proof-search algorithm, which exploit the principle of local reasoning for safety properties to automatically generate CFI proofs for the machine-code of programs compiled with our prescribed source-code safety-checks.
+  </p>
+  <p>
+    To the best of our knowledge, our approach to CFI is the first to combine programmer-visible source-code enforcement mechanisms for CFI–enabling programmers to customize them and observe that their software is not inadvertently changed–with machine-code proofs of CFI that can be automated, and that does not require a trusted or verified compiler to ensure its proven properties hold in machine-code. We evaluate our CFI approach on realistic embedded software. We evaluate our approach on the MiBench and WCET benchmarks, implementations of common file utilities, and programs interfacing with hardware inputs and outputs on the Raspberry Pi single-board-computer. The variety of our target programs, and our ability to support useful features such as file and hardware inputs and outputs, demonstrate the wide applicability of our approach.
+  </p>
+</div>
+
+<div class="contentbox">
+  <h2>Related Publications</h2>
+  <ol>
+<!--    <li><p>
+    <span id="ita">PENSIEVE: <u>P</u>rogrammer-<u>E</u>vide<u>n</u>t <u>S</u>oftware Fault <u>I</u>solation, V<u>e</u>rifiable for E<u>ve</u>ryone.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Hui Jun Tay, Rajeev Gandhi, and Priya Narasimhan.<br />
+    Working title under submission.
+    </p></li>-->
+
+    <li><p>
+    <span id="ita">AUSPICE-R: Automatic Safety-Property Proofs for Realistic Features in Machine Code</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Hui Jun Tay, Rajeev Gandhi, and Priya
+    Narasimhan.<br />
+    In 14th Asian Symposium on Programming Languages and Systems (APLAS), 
+    November 2016. (<a href="papers/aplas16_tan_preprint.pdf" target="_blank">Preprint</a>)
+    </p></li>	  
+	
+    <li><p>
+    <span id="ita">Poster Abstract: BUFS: Towards Bottom-Up Foundational Security for Software in the Internet-of-Things</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, and Priya
+    Narasimhan.<br />
+    In 1st IEEE/ACM Symposium on Edge Computing (SEC 2016), 
+    October 2016. 
+    </p></li>	  
+
+    <li><p>
+    <span id="ita">PCFIRE: Towards Provable, Preventative Control-Flow Integrity Enforcement for Realistic Embedded Software</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Hui Jun Tay, Utsav Drolia, Rajeev Gandhi, and Priya
+    Narasimhan.<br />
+    (To Appear) In ACM SIGBED International Conference on Embedded Software (EMSOFT), 
+    October 2016. (<a href="papers/emsoft16_tan_preprint.pdf" target="_blank">Preprint</a>)
+    </p></li>	  
+
+    <li><p>
+    <span id="ita">White-box Software Isolation with Fully Automated
+    Black-box Proofs</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, and Priya
+    Narasimhan.<br />
+    In Formal Methods in Computer-Aided Design (FMCAD) Student Forum,
+    September 2015. (<a
+    href="http://www.cs.utexas.edu/users/hunt/FMCAD/FMCAD15/student-forum-presentations/posters/jiaqi_tan.pdf"
+    target="_blank">Poster</a>) (<a
+    href="http://www.cs.utexas.edu/users/hunt/FMCAD/FMCAD15/student-forum-presentations/talk_jiaqi_tan.pptx"
+    target="_blank">Talk slides</a>) <i>Awarded Best Student Forum Contribution.</i>
+    </p></li>
+    
+    <li><p>
+    <span id="ita">AUSPICE: Automated Safety Property Verification for Unmodified Executables.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Hui Jun Tay, Rajeev Gandhi, and Priya Narasimhan.<br />
+    In 7th Working Conference on Verified Software: Theories, Tools, and Experiments (VSTTE), July 2015.
+    (<a href="papers/tan-auspice-vstte15-preprint.pdf" target="_blank">Preprint</a>) 
+	(<a href="papers/tan-vstte15-correction.pdf" target="_blank">Errata, 17 May 2016</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">STOVE: Strict, Observable, Verifiable Data and Execution Models for Untrusted Applications.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, and Priya Narasimhan.<br />
+    In 6th IEEE International Conference on Cloud Computing Technology and Science (CloudCom) Doctoral Symposium, December 2014.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/CloudComputing/07037729.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">STOVEPipe: Observable Access Control of User Data for Untrusted Applications on Mobile Devices.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Utsav Drolia, Rolando Martins, Rajeev Gandhi, and Priya Narasimhan. <br />
+    In 6th IEEE International Conference on Cloud Computing Technology and Science (CloudCom) (Poster Paper), December 2014.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/CloudComputing/07037737.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">Poster: Towards Secure Execution of Untrusted Code for Mobile Edge-Clouds.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Utsav Drolia, Rajeev Gandhi, and Priya Narasimhan.<br />
+    In 7th ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec), July 2014.
+    (<a href="http://www.contrib.andrew.cmu.edu/~jiaqit/papers/wisec14-poster-tan-preprint.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    
+    <li><p>
+    <span id="ita">Challenges in Security and Privacy for Mobile Edge-Clouds.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan.<br />
+    Carnegie Mellon University Parallel Data Laboratory Technical Report
+    <a href="http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-13-113.pdf" target="_blank">CMU-PDL-13-113</a>,
+    October 2013.
+    </p></li>
+
+    
+  </ol>
+</div>
+
+<h1>Other Projects</h1>
+
+<div class="contentbox">
+  <h2>Mobile, Web, and IoT Security</h2>
+
+  <h3>Publications</h3>
+
+  <ol>
+    <li><p>
+    <span id="ita">A Survey of Security Vulnerabilities in Bluetooth Low Energy Beacons.</span> <br />
+    Hui Jun Tay, <span id="selfauthor">Jiaqi Tan</span>, and Priya Narasimhan. <br />
+    Carnegie Mellon University Parallel Data Laboratory Technical Report
+    <a href="http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-16-109.pdf" target="_blank">CMU-PDL-16-109</a>, November 2016.	
+    </p></li>
+    <li><p>
+    <span id="ita">A5: Automated Analysis of Adversarial Android Applications.</span><br />
+    Tim Vidas, <span id="selfauthor">Jiaqi Tan</span>, Jayvardhan Nahata, Chaur-Lih Tan, Nicolas Christin, and Patrick Tague.<br />
+    In 4th ACM Workshop on Security and Privacy in Smartphones and Mobile Devices (SPSM), November 2014.
+    (<a href="http://users.ece.cmu.edu/~tvidas/papers/SPSM14.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">Short Paper: CHIPS: Content-based Heuristics for Improving Photo Privacy for Smartphones.</span> <br />
+    <span id="selfauthor">Jiaqi Tan</span>, Utsav Drolia, Rolando Martins, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 7th ACM Conference on Security and Privacy in Wireless and Mobile Networks (WiSec), July 2014.
+    (<a href="http://www.contrib.andrew.cmu.edu/~jiaqit/papers/wisec14-tan-preprint.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">PETAL: Preset Encoding Table Information Leakage.</span> <br />
+    <span id="selfauthor">Jiaqi Tan</span>, Jayvardhan Nahata. <br />
+    Carnegie Mellon University Parallel Data Laboratory Technical Report
+    <a href="http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-13-106.pdf" target="_blank">CMU-PDL-13-106</a>, April 2013.
+    </p></li>
+    
+  </ol>
+  
+</div>
+
+<div class="contentbox">
+  <h2>Mobile Edge-Cloud Computing</h2>
+
+  <h3>Publications</h3>
+
+  <ol>
+    <li><p>
+    <span id="ita">Towards edge-caching for image recognition.</span>
+    Utsav Drolia, Katherine Guo (Bell Labs, USA), <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan.
+    In 1st International Workshop on Smart Edge Computing and Networking (SmartEdge), co-located with the 15th IEEE International Conference on Pervasive Computing and Communications (PerCom), March 2017.
+    </p></li>
+
+    <li><p>
+    <span id="ita">The next-generation in-stadium experience
+    (keynote).</span>
+    Priya Narasimhan, Utsav Drolia, <span id="selfauthor">Jiaqi
+    Tan</span>, Nathan Mickulicz, Priya Narasimhan. In 2015 ACM
+    SIGPLAN International Conference on Generative Programming:
+    Concepts and Experiences (GPCE), Keynote Address.
+    </p></li>
+    
+    <li><p>
+    <span id="ita">The Case For Mobile Edge-Clouds.</span>
+    Utsav Drolia, Rolando Martins, <span id="selfauthor">Jiaqi Tan</span>, Ankit Chheda, Monil Sanghavi, Rajeev Gandhi, Priya Narasimhan.
+    In 10th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC), December 2013.
+    </p></li>
+    
+  </ol>
+  
+</div>
+
+<h1>Previous Projects</h1>
+
+<div class="contentbox">
+  <h2>Failure Diagnosis and Visualization for MapReduce Systems</h2>
+
+  <h3>Publications</h3>
+
+  <ol>
+
+    <li><p>
+    <span id="ita">Theia: Visual Signatures for Problem Diagnosis in Large Hadoop Clusters.</span><br />
+    Elmer Garduno, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan.<br />
+    In USENIX ;login, 38(2), April 2013.
+    (<a href="https://www.usenix.org/system/files/login/articles/03_garduni_08-013_online.pdf" target="_blank">Online article</a>)
+    </p></li>
+				  
+    <li><p>
+    <span id="ita">Theia: Visual Signatures for Problem Diagnosis in Large Hadoop Clusters.</span><br />
+    Elmer Garduno, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan.<br />
+    In 26th Large Installation System Administration (LISA) Conference, San Diego, CA, Dec 2012. <br />
+    <i>Awarded Best Student Paper.</i>
+    </p></li>
+
+    <li><p>
+    <span id="ita">Understanding and Improving the Diagnostic Workflow of MapReduce Users.</span><br />
+    Jason Campbell, Arun Ganesan, Ben Gotow, Soila Kavulya, James Mulholland, Priya Narasimhan, Sriram Ramasubramanian, Mark Shuster, <span id="selfauthor">Jiaqi Tan</span>.<br />
+    In 5th ACM Symposium on Computer Human Interaction for Management of Information Technology (CHIMIT), Boston, MA, Dec 2011.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/associated/chimit11.pdf" target="_blank">Preprint</a>)
+    </p></li>
+			  
+    <li><p>
+    <span id="ita">Visual, Log-based Causal Tracing for Performance Debugging of MapReduce Systems.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Soila Kavulya, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 30th IEEE International Conference on Distributed Computing Systems (ICDCS) 2010, Genoa, Italy, Jun 2010.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/associated/icdcs2010.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+
+    <li><p>
+    <span id="ita">An Analysis of Traces from a Production MapReduce Cluster.</span> <br />
+    Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 10th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing (CCGrid) 2010, Melbourne, Victoria, Australia, May 2010.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/associated/m45-analysis.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">Kahuna: Problem Diagnosis for MapReduce-based Cloud Computing Environments.</span> <br />
+    <span id="selfauthor">Jiaqi Tan</span>, Xinghao Pan, Soila Kavulya, Eugene Marinelli, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 12th IEEE/IFIP Network Operations and Management Symposium (NOMS) 2010, Osaka, Japan, Apr 2010.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/ProblemDiagnosis/Tan-NOMS10.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">Blind Men and the Elephant: Piecing Together Hadoop for Diagnosis.</span> <br />
+    Xinghao Pan, <span id="selfauthor">Jiaqi Tan</span>, Soila Kavulya, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 20th IEEE International Symposium on Software Reliability Engineering (ISSRE), Industrial Track, Mysuru, India, Nov 2009. 
+    </p></li>
+                
+    <li><p>
+    <span id="ita">Mochi: Visual Log-Analysis Based Tools for Debugging Hadoop.</span> <br />
+    <span id="selfauthor">Jiaqi Tan</span>, Xinghao Pan, Soila Kavulya, Rajeev Gandhi, Priya Narasimhan. <br />
+    In USENIX Workshop on Hot Topics in Cloud Computing (HotCloud '09), San Diego, CA, Jun 2009.
+    (<a href="http://www.usenix.org/event/hotcloud09/tech/full_papers/tan.pdf" target="_blank">Paper</a>)
+    </p></li>
+
+                
+    <li><p>
+    
+    <span id="ita">Ganesha: Black-Box Diagnosis for MapReduce Systems.</span><br />
+    Xinghao Pan, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan. <br />
+    In Workshop on Hot Topics in Measurement & Modeling of Computer Systems (HotMetrics), Seattle, WA, Jun 2009.
+    (<a href="http://www.sigmetrics.org/conferences/sigmetrics/2009/workshops/papers_hotmetrics/session1_1.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita"><u>S</u>ALSA: <u>A</u>nalyzing <u>L</u>ogs as <u>S</u>t<u>a</u>te Machines.</span> <br />
+    <span id="selfauthor">Jiaqi Tan</span>, Xinghao Pan, Soila Kavulya, Rajeev Gandhi, Priya Narasimhan. <br />
+    In USENIX Workshop on Analysis of System Logs (WASL), San Diego, CA, Dec 2008.
+    (<a href="https://www.usenix.org/legacy/event/wasl08/tech/full_papers/tan/tan.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    
+  </ol>
+  
+</div>
+
+<div class="contentbox">
+  <h2>Failure Diagnosis for Distributed Systems</h2>
+
+  <h3>Publications</h3>
+
+  <ol>
+    <li><p>
+    <span id="ita">Performance Troubleshooting in Data Centers: An Annotated Bibliography.</span><br />
+    Chengwei Wang, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Liting Hu, Mahendra Kutare, Michael Kasick, Karsten Schwan, Priya Narasimhan, Rajeev Gandhi.<br />
+    In ACM SIGOPS Operating Systems Review 47(3), November 2013.
+    (<a href="http://www.istc-cc.cmu.edu/publications/papers/2013/annotated.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+    <li><p>
+    <span id="ita">Transparent System Call Based Performance Debugging for Cloud Computing.</span><br />
+    Nikhil Khadke, Michael Kasick, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Priya Narasimhan. <br />
+    In USENIX Workshop on Managing Systems Automatically and Dynamically (MAD), Hollywood, CA, Oct 2012.
+    </p></li>
+
+    <li><p>
+    <span id="ita">Lightweight Black-box Failure Detection for Distributed Systems.</span><br />
+    <span id="selfauthor">Jiaqi Tan</span>, Soila Kavulya, Rajeev Gandhi, Priya Narasimhan.<br />
+    In Workshop on Management of Big Data systems (MBDS) 2012, co-located with the International Conference on Autonomic Computing, San Jose, SA, Sep 2012.
+    </p></li>
+	
+    <li><p>
+    <span id="ita">ASDF: An Automated, Online Framework for Diagnosing Performance Problems.</span><br />
+    Keith Bare, Soila Kavulya, <span id="selfauthor">Jiaqi Tan</span>, Xinghao Pan, Eugene Marinelli, Michael Kasick, Rajeev Gandhi, Priya Narasimhan.<br />
+    Architecting Dependable Systems, in Lecture Notes in Computer Science, Volume 6420/2010, No. 7, Pages 201-226, 2010.
+    </p></li>
+    
+    <li><p>
+    <span id="ita">Black Box Problem Diagnosis in Parallel File Systems.</span><br />
+    Michael Kasick, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan. <br />
+    In 8th USENIX Conference on File and Storage Technologies (FAST) 2010, San Jose, CA, Feb 2010. 
+    </p></li>
+
+    <li><p>
+    <span id="ita">System-Call Based Problem Diagnosis for PVFS.</span><br />
+    Michael Kasick, Keith Bare, Eugene Marinelli, <span id="selfauthor">Jiaqi Tan</span>, Rajeev Gandhi, Priya Narasimhan.<br />
+    In Workshop on Hot Topics in System Dependability (HotDep 2009), Estoril, Lisbon, Portugal, Jun 2009.
+    (<a href="http://www.pdl.cmu.edu/PDL-FTP/stray/kasick-hotdep09.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+	
+  </ol>
+  
+</div>
+
+<div class="contentbox">
+  <h2>Other Activities</h2>
+
+  <h3>Publications</h3>
+
+  <ol>
+
+    <li><p>
+    <span id="ita">Hadoop Framework: Impact of Data Organization on Performance.</span><br />
+    Yu Shyang Tan, <span id="selfauthor">Jiaqi Tan</span>, Eng Siong Chng, Bu-Sung Lee, Jiaming Li, Susumu Date, Hui Ping Chak, Xiong Xiao, Atsushi Narishige.<br />
+    In Software: Practice and Experience, 43(11), John Wiley and Sons Ltd., May 2011.
+    </p></li>
+
+    <li><p>
+    <span id="ita">No More HotDependencies: Toward Dependency-Agnostic Upgrades in Distributed Systems.</span><br />
+    Tudor Dumitras, <span id="selfauthor">Jiaqi Tan</span>, Zhengheng Gho, Priya Narasimhan. <br />
+    In Workshop on Hot Topics in System Dependability (HotDep), Edinburgh, Scotland, Jun 2007.
+    (<a href="http://www.cs.cmu.edu/~tdumitra/public_documents/dumitras07dependencyagnosticupgrades.pdf" target="_blank">Preprint</a>)
+    </p></li>
+
+  </ol>
+
+  <h2>Academic Activities</h2>
+
+  <ol>
+    <li><p>Shadow PC: ACM European Conference on Computer Systems (EuroSys) 2016</p></li>
+    <li><p>External Reviewer: ACM User Interface Software and
+    Technology Symposium (UIST) 2015</p></li>
+  </ol>
+
+  <h2>Teaching</h2>
+
+  <ol>
+    <li><p>Completed the <a href="http://www.cmu.edu/teaching/ffp/" target="_blank">Future Faculty Program</a> at the <a href="http://www.cmu.edu/teaching/" target="_blank">Eberly Center for Teaching Excellence and Educational Innovation</a></p></li>
+    <li><p>Teaching Assistant: 18-848D (Special Topics in Embedded
+    Systems: Sports Technology), Spring 2015</p></li>
+    <li><p>Teaching Assistant: 18-749 (Building Reliable Distributed
+    Systems), Fall 2015</p></li>
+  </ol>  
+  
+</div>
+
+<h1>Contact Information</h1>
+
+<div class="contentbox">
+  <h3>Email</h3>
+  <p>
+  tanjiaqi at cmu dot edu<br />
+  jiaqi.tan at alumni dot cmu dot edu
+  </p>
+
+  <h3>Office</h3>
+  <p>
+  4720 Forbes Avenue, CIC 410
+  <br />Pittsburgh, PA 15213, USA
+  </p>
+  
+  <p><i>Versions of papers provided on this page are meant only for personal or educational use, and are not intended for redistribution for any other purpose. </i></p>
+  
+</div>
+
+
+</div>
+
+<!--<script type="text/javascript" src="http://jiaqi.ratherharmless.org/u/t.js"></script>-->
+<img src="http://jiaqi.ratherharmless.org/u/t2.php" height=0 width=0 />
+
+</body>
+</html>
